@@ -26,6 +26,37 @@ public class ArrayLists {
         //6
         colors.remove(2);
         System.out.println("After removing the third element from a array list': " + colors);
+        //7
+        String searchElement = "Gray";
+        if (colors.contains(searchElement)){
+            System.out.println(searchElement + " is present in the list.");
+        } else {
+            System.out.println(searchElement + " is not present in the list.");
+        }
+        //8
+        Collections.sort(colors);
+        System.out.println("Sorted ArrayList: " + colors);
+        //9
+        ArrayList<String> copyofColors = new ArrayList<>(colors);
+        System.out.println("Copied ArrayList: " + copyofColors);
+        //10
+        Collections.reverse(colors);
+        System.out.println("Reversed ArrayList: " + colors);
+        //11
+        boolean isEqual = colors.equals(copyofColors);
+        System.out.println("Are the main ArrayList and copied ArrayList equal: " + isEqual);
+        //12
+        colors.clear();
+        System.out.println("Cleared ArrayList: " + colors);
+        //13
+        boolean isEmpty = colors.isEmpty();
+        System.out.println("Is the ArrayList empty?: " + isEmpty);
+        //14
+        colors.ensureCapacity(20);
+        System.out.println("Increased capacity of the ArrayList.");
+        //15
+        colors.trimToSize();
+        System.out.println("Trimmed capacity to current size.");
     }
 }
 
